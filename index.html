@@ -13,7 +13,57 @@
           <h1>Jimmy's Burger</h1>
           <h3>The best burgers and pizzas in town</h3>
       </header>
-      <section class="container" id="container"></section>
+      <section class="menu-container" id="container">
+      </section>
+      <section class="order-section" id="order-section">
+        <h2>Your order</h2>
+        <div class="order-details" id="order-details"></div>
+        <div class="price-discount">
+          <div class="total-price">
+            <p>Total price : </p>
+            <p id="order-total-price" class="order-total-price"></p>
+          </div>
+          <div class="discount" id="discount">
+              <p id="order-discount" class="order-discount"></p>
+          </div>
+        </div>
+        <button id="complete-order-btn" class="complete-order-btn">
+          Complete your order
+        </button>
+      </section>
+      <section class="modal" id="modal">
+        <div class="close-modal-btn-container">
+          <button class="modal-close-btn" id="modal-close-btn">X</button>
+        </div>
+        <div class="modal-inner">
+          <h2>Enter your card details</h2>
+          <form id="payment-form" class="payment-form">
+            <input
+              type="text"
+              placeholder="Enter your name"
+              id="form-name"
+              name="form-name"
+              required>
+            <input
+              type="password"
+              placeholder="Enter your card number"
+              id="form-card"
+              name="form-card"
+              inputmode="numeric"
+              pattern="[0-9]{16}"
+              required>
+            <input
+              type="password"
+              placeholder="Enter CVV"
+              id="form-cvv"
+              inputmode="numeric"
+              name="form-cvv"
+              pattern="[0-9]{3}"
+              required>
+            <button class="pay-btn" type="submit">Pay</button>
+          </form>
+        </div>
+      </section>
 	<script src="index.js" type="module"></script>
     </body>
 </html>

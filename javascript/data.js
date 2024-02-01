@@ -19,6 +19,13 @@ const menuArray = [
         price: 12,
         emoji: "🍺",
         id: 2
+    },
+        {
+          name: "Chicken Nuggets",
+          ingredients: ["chicken", "BBQ Sauce"],
+          price: 9,
+          emoji: "🍗",
+          id: 3
     }
 ]
 
