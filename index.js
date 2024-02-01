@@ -88,7 +88,7 @@ function totalPrice(){
     document.getElementById('order-discount').innerText = "(Discount: 10%) 🎁"
   } else {
     document.getElementById('order-total-price').innerText = `$${orderTotalPrice}`
-
+    document.getElementById('discount').style.display="none"
   }
 
 }
