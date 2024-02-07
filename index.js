@@ -48,11 +48,10 @@ function pushOrderInMenusOrdered(orderId){
 }
 
 function removeOrder(orderId){
-
-    menusOrdered.splice(orderId, 1)
+  const indexOfItemToRemove = menusOrdered.findIndex( item => item.id === orderId)
+    menusOrdered.splice(indexOfItemToRemove, 1)
     totalPrice()
     renderOrder()
-
     !menusOrdered.length ? orderSection.style.display="none" : ''
 }
 
