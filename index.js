@@ -45,11 +45,14 @@ function pushOrderInMenusOrdered(orderId){
 }
 
 function removeOrder(orderId){
-  menusOrdered.splice(orderId, 1)
-  totalPrice()
-  renderOrder()
+  if (menusOrdered.length > 0) {
+    menusOrdered.splice(orderId, 1)
+    totalPrice()
+    renderOrder()
 
-  menusOrdered.length < 1 ? document.getElementById("order-section").style.display="none" : ''
+  } else {
+    document.getElementById("order-section").style.display="none"
+  }
 }
 
 function renderOrder(){
