@@ -1,10 +1,10 @@
-import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
+
 
 const menuArray = [
     {
         name: "Pizza",
         ingredients: ["pepperoni", "mushrom", "mozarella"],
-        id: uuidv4(),
+        id: 0,
         price: 14,
         emoji: "🍕"
     },
@@ -13,21 +13,21 @@ const menuArray = [
         ingredients: ["beef", "cheese", "lettuce"],
         price: 12,
         emoji: "🍔",
-        id: uuidv4()
+        id: 1
     },
         {
         name: "Beer",
         ingredients: ["grain, hops, yeast, water"],
         price: 12,
         emoji: "🍺",
-        id: uuidv4()
+        id: 2
     },
         {
           name: "Chicken Nuggets",
           ingredients: ["chicken", "BBQ Sauce"],
           price: 9,
           emoji: "🍗",
-          id: uuidv4()
+          id: 3
     }
 ]
 
